@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background: #f8f8f8;
+}
+
+.mobile-style-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*----------------------------------------------*/
+/*Top Image of Space_Ship.svg  CSS */
+/*----------------------------------------------*/
+
+.Space_Ship {
+    width: 100%;
+    height: auto;
+    margin: 0;
+} 
+
+/*----------------------------------------------*/
+/*Title Statement CSS */
+/*----------------------------------------------*/
+
+.Title {
+    background: transparent;
+    color: orange;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 0.85;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.Title #Top-Title {
+    margin-right: 415px;
+    line-height: 1.75;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.Title #Interstellar {
+    color: black;
+    margin: 0;
+    font-size: 6rem;
+}
+
+.Title #Web-Development {
+    color: black;
+    margin: 0;
+    font-weight: 400;
+    font-size: 3.58rem;
+}
+
+.Title #Bottom-Title {
+    margin-left: 315px;
+    line-height: 2.95;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/*----------------------------------------------*/
+/*Navigation Menu CSS */
+/*----------------------------------------------*/
+
+nav {
+    margin-top: 3em;
+}
+
+nav > ul {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding: .15em 0;
+    margin: 0 auto;
+    border-top: solid black 3px;
+}
+
+nav > ul li {
+    padding: 0.5em;
+    font-weight: 500;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+nav > ul li:hover {
+    color: orange;
+}
+
+/*----------------------------------------------*/
+/*Media Queries for Phone CSS */
+/*----------------------------------------------*/
+    
+@media only screen and (max-width: 600px) {
+    /*----------------------------------------------*/
+    /*Title Statement Media Query CSS */
+    /*----------------------------------------------*/
+
+    .Title #Top-Title {
+        margin-right: 0px;
+        line-height: 1;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    
+    .Title #Interstellar {
+        color: black;
+        margin: 0;
+        font-size: 3rem;
+    }
+    
+    .Title #Web-Development {
+        color: black;
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.80rem;
+    }
+    
+    .Title #Bottom-Title {
+        margin-left: 0px;
+        line-height: 2;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    /*----------------------------------------------*/
+    /*Navigation Menu Media Query CSS */
+    /*----------------------------------------------*/
+    
+    nav > ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        list-style: none;
+        padding: .15em 0;
+        margin: 0 auto;
+        border-top: solid black 3px;
+        border-bottom: none;
+    }
+    
+    nav > ul li {
+        padding: 0.5em;
+        font-weight: 500;
+        font-family: 'Chelsea Market', cursive;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+  }
