@@ -1,0 +1,69 @@
+.ship-container {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100vw;
+    z-index: 1;
+}
+
+.space-ship {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 210vw;
+    height: auto;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: translateX(100%);
+    
+}
+
+.space-ship-ani {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 210vw;
+    height: auto;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: translateX(100%);
+    animation: ship-flying 10s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ship-flying {
+    from{
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.space-ship img:first-child{
+    width: 130px;
+    height: auto;
+}
+
+/*----------------------------------------------*/
+/*Animate the Ship's Rocket Flame */
+/*----------------------------------------------*/
+
+.space-ship img:last-child{
+    width: 150px;
+    height: auto;
+    animation: pulse .15s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        width: 150px;
+    }
+    100% {
+        width: 185px;
+    }
+}
+
+
+  
+  

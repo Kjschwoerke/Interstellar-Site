@@ -6,12 +6,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animation.css">
     <title>Space Site</title>
 </head>
 <body>
     <div class="mobile-style-container">
-    <img class="Space_Ship" src="./images/Space_Ship.svg" alt="Spaceship flying through Outer Space">
-
+    
+    <picture>
+        <source srcset="./images/Space_Ship_Mobile.svg" media="(max-width: 600px)">
+        <source srcset="./images/Space_Ship.svg">
+        <img src="./images/Space_Ship.svg" alt="Spaceship flying through Outer Space">
+    </picture>
+     
 
     <h1 class="Title">
         <span id='Top-Title'>Welcome to an</span>
@@ -23,6 +29,13 @@
         <span id='Bottom-Title'>site by Kenneth Schwoerke</span>
     </h1>
     
+    <div class="ship-container">
+        <div class="space-ship" id="ship-animated">
+            <img src="./images/Space-Ship-model.svg" alt="animated space ship">
+            <img src="./images/Space-Ship-Flame.svg" alt="animated space ship flame">
+        </div>
+    </div>
+
 
     <nav>
         <ul>
@@ -33,5 +46,10 @@
     </nav>
 </div>
 
+
+<!-- Javascript src link: -->
+<!-- --------------------------------------------- -->
+<script src="./script.js"></script>
+<!-- --------------------------------------------- -->
 </body>
 </html>
