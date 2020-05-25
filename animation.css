@@ -27,8 +27,6 @@
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     transform: translateX(100%);
-    animation: ship-flying 10s linear;
-    animation-fill-mode: forwards;
 }
 
 @keyframes ship-flying {
@@ -65,5 +63,13 @@
 }
 
 
-  
-  
+@media only screen and (min-width: 1000px) {
+    .ship-container {
+        position: relative;
+        overflow: hidden;
+        height: auto;
+        width: 100vw;
+        z-index: 1;
+        margin-bottom: 2em;
+    }
+}

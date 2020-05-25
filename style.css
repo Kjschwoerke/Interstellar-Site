@@ -73,9 +73,8 @@ body {
 /*----------------------------------------------*/
 
 nav {
-    position: relative;
-    z-index: 0;
     margin-top: 3em;
+    background: transparent;
 }
 
 nav > ul {
@@ -88,6 +87,7 @@ nav > ul {
     padding: .15em 0;
     margin: 0 auto;
     border-top: solid black 3px;
+    background: transparent;
 }
 
 nav > ul li {
@@ -96,6 +96,7 @@ nav > ul li {
     font-family: 'Chelsea Market', cursive;
     font-size: 1.5rem;
     text-align: center;
+    background: transparent;
 }
 
 nav > ul li:hover {
@@ -173,4 +174,21 @@ nav > ul li:hover {
         text-align: center;
     }
 
+  }
+
+  @media only screen and (min-width: 1000px) {
+    nav {
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        color: orange;
+        border: none;
+        background: #f8f8f8ec;
+        margin-top: 0;
+    }
+
+    nav > ul {
+        border-top: none;
+        border-bottom: none;
+    }
   }
