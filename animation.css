@@ -1,3 +1,29 @@
+.slogan {
+    position: relative;
+    z-index: 2;
+    color: transparent;
+    top: 50%;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    color: orange;
+    width: 210vw;
+    transform: translateX(100%);
+}
+
+@keyframes reveal {
+    from{
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-25.85%);
+    }
+}
+
+/* Ship Animation */
 .ship-container {
     position: relative;
     overflow: hidden;
@@ -15,7 +41,8 @@
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     transform: translateX(100%);
-    
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,30,57,0.4578005115089514) 5%, rgba(7,7,25,0.8976982097186701) 12%, rgba(2,2,18,1) 100%);
 }
 
 .space-ship-ani {
@@ -24,8 +51,8 @@
     justify-content: flex-start;
     width: 210vw;
     height: auto;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 80%;
     transform: translateX(100%);
 }
 
